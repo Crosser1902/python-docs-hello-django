@@ -8,3 +8,7 @@ def riaz(request):
     context = {}
     context['hello'] = 'Hello Riaz!'
     return render(request, 'display.html',context)
+
+def runoob(request):
+    views_name = "Rookie"
+    return render(request,"runoob.html",{"name":views_name})
