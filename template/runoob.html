@@ -5,7 +5,7 @@
     <title>Rookie</title>
 </head>
 <body>
-<p>{{ views_list }}</p>
-<p>{{ views_list.0 }}</p>
+<p>{{ views_list|second|upper }}</p>
+<p>{{ views_list.0|truncatewords:"2" }}</p>
 </body>
 </html>
