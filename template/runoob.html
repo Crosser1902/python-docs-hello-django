@@ -7,5 +7,10 @@
 <body>
 <p>{{ views_list|first|upper }}</p>
 <p>{{ views_list.0|truncatewords:"4" }}</p>
+{%if views_list%}
+There is views_list
+{%else%}
+No views_list
+{%endif%}
 </body>
 </html>
