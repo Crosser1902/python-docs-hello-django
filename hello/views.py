@@ -10,5 +10,22 @@ def riaz(request):
     return render(request, 'display.html',context)
 
 def runoob(request):
-    views_name = "Rookie"
-    return render(request,"runoob.html",{"name":views_name})
+    views_name = ["Rookie1","Rookie2","Rookie3"]
+    return render(request, 'runoob.html',{"views_list":views_name})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
