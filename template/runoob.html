@@ -5,6 +5,7 @@
     <title>Rookie</title>
 </head>
 <body>
+{% load my_tags %}
 <p>{{ views_list|first|upper }}</p>
 <p>{{ views_list.0|truncatewords:"4" }}</p>
 {%if views_list%}
@@ -12,5 +13,9 @@ There is views_list
 {%else%}
 No views_list
 {%endif%}
+{{ 11|my_filter:22 }}
+{% my_tag1 11 22 33 %}
+{% my_html "zzz" "xxx" %}
+
 </body>
 </html>
